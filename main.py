@@ -46,13 +46,6 @@ def process_attack():
         x_AI,y_AI = generate_attack()
         player_hit = attack1((x,y), AI_board, AI_ships)
         AI_hit = attack1((x_AI, y_AI), initialised_player_board, player_ships)
-        #if all(count == 0 for count in ships_player.values()):
-            #return finished
-        #elif all(count == 0 for count in ships_AI.values()):
-            #return finished
-        #else:
-            #return not_finished
-        #finished = eden od igralcev nima več ladij
         if AI_ships and player_ships:
             return jsonify({
                 'hit': player_hit,
