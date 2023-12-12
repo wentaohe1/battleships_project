@@ -51,13 +51,13 @@ def draw_board(board):
         print("|", end='')
         for element in row:
             if element:
-                print(element, end='|')   #'Ship' + str(i) to sm dou stran iz printa ker pol mi narobe imena ladij printa?
+                print(element, end='|')   
             else:
                 print(' ' * 5, end='|')
         print()
         print('-' * len(board) * 6)
 
-ai_opponent_game_loop()
+
    
 
 
