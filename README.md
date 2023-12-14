@@ -44,7 +44,8 @@ The ai_opponent_game_loop should run like this:
 
 If the user enters an invalid value or an integer that is bigger than the length of the board itself a message will be printed, prompting the user to enter another valid value. Another message, announcing the winner will be printed when either a player or the AI has won.
 
-To play through the web the user has to run the main.py file, which prints out an url in the terminal. The user has to then enter the url in the browser and add /placement at the end.
+## Playing through the web
+To play through the web the user has to run the main.py file, which prints out an url in the terminal. The default url enables the user to play versus the AI with preliminary chosen battleships and their placements which are written in battleships.txt and placement.json respectively. If the user  wants to choose their own ship placement they have to then enter the url in the browser and add /placement at the end of it. This will then lead to a new site where non of the ships have been placed. 
 
 ## Testing
-Before running tests you have install pytest which you can do by running pip install pytest in the terminal. Once you have done that you can run the tests by executing pytest command in the terminal.
+Before running tests you have to install pytest which you can do by running pip install pytest in the terminal. Once you have done that you can run the tests by executing pytest command in the terminal.
